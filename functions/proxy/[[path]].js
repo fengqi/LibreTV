@@ -51,7 +51,7 @@ export async function onRequest(context) {
     const MAX_RECURSION = parseInt(env.MAX_RECURSION || '5'); // 默认 5 层
     // 广告过滤已移至播放器处理，代理不再执行
     let USER_AGENTS = [ // 提供一个基础的默认值
-      'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+      'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36'
     ];
     try {
         // 尝试从环境变量解析 USER_AGENTS_JSON

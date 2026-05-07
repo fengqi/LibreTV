@@ -148,7 +148,7 @@ const API_CONFIG = {
         pagePath: '?ac=videolist&wd={query}&pg={page}',
         maxPages: 50, // 最大获取页数
         headers: {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36',
             'Accept': 'application/json'
         }
     },
@@ -156,7 +156,7 @@ const API_CONFIG = {
         // 只拼接参数部分
         path: '?ac=videolist&ids=',
         headers: {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36',
             'Accept': 'application/json'
         }
     }

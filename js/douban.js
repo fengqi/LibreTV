@@ -450,7 +450,7 @@ async function fetchDoubanData(url) {
     const fetchOptions = {
         signal: controller.signal,
         headers: {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36',
             'Referer': 'https://movie.douban.com/',
             'Accept': 'application/json, text/plain, */*',
         }
