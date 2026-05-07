@@ -178,14 +178,21 @@ app.get('/proxy/:encodedUrl', async (req, res) => {
     
     const makeRequest = async () => {
       try {
+        const targetHost = new URL(targetUrl).hostname.toLowerCase();
+        const requestHeaders = {
+          'User-Agent': config.userAgent
+        };
+
+        if (/^img\d+\.doubanio\.com$/.test(targetHost)) {
+          requestHeaders.referer = 'https://movie.douban.com/';
+        }
+
         return await axios({
           method: 'get',
           url: targetUrl,
           responseType: 'stream',
           timeout: config.timeout,
-          headers: {
-            'User-Agent': config.userAgent
-          }
+          headers: requestHeaders
         });
       } catch (error) {
         if (retries < maxRetries) {
